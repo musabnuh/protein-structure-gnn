@@ -1,0 +1,21 @@
+# requirements.txt
+# Core ML and GNN dependencies
+torch
+torchvision
+torchaudio
+torch-geometric
+
+# Bioinformatics tools
+biopython
+
+# Data processing and evaluation
+scikit-learn
+networkx
+matplotlib
+
+# Optional for visualization or scripting
+notebook
+
+# Note:
+# DSSP (`mkdssp`) must be installed separately via:
+# sudo apt install dssp
