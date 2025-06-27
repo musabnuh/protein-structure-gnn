@@ -1,5 +1,5 @@
 # Protein-Structure‑GNN  
-A Graph Neural Network Approach to Protein Structure Modeling*
+A Graph Neural Network Approach to Protein Structure Modeling
 
 ---
 
