@@ -1,12 +1,12 @@
 # Protein Secondary Structure Classification with GNNs
 
-## 🔬 Motivation
+## Motivation
 This project demonstrates key concepts in:
 - **Geometric Deep Learning / Graph Neural Networks**: Apply graph-based deep learning to structural biology problems
 - **Structural Biology & Computational Biology**: Analyze protein structures using computational methods
 - **Protein Ensemble Modeling**: Represent protein structures as graphs to capture spatial relationships
 
-## 🚀 Project Pipeline
+## Project Pipeline
 Run everything using:
 ```bash
 python run_pipeline.py
@@ -20,7 +20,7 @@ python run_pipeline.py
 5. **Evaluate** model and report classification performance: Precision, recall, F1-score metrics
 6. **Visualize** results: Graph structure, embeddings, and prediction accuracy
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 .
 ├── data/             # Raw PDBs, DSSP files, and graphs
@@ -44,7 +44,7 @@ python run_pipeline.py
 └── README.md
 ```
 
-## 📦 Requirements
+## Requirements
 Install dependencies:
 ```bash
 # Option 1: Using pip directly
@@ -69,7 +69,7 @@ pip install nglview biotite
 pip install scikit-learn pandas
 ```
 
-## 🔍 Evaluation Output
+## Evaluation Output
 After training, you’ll see a classification report in the following format:
 ```
               precision    recall  f1-score   support
@@ -79,7 +79,7 @@ After training, you’ll see a classification report in the following format:
         Coil                                           ...
 ```
 
-## 📊 Visualization
+## Visualization
 The project provides multiple visualization tools:
 
 ### Graph Visualization
@@ -114,7 +114,7 @@ python scripts/visualize_training.py --log_file models/training_log.csv
 
 All visualizations are saved to the `visualizations/` directory.
 
-## 📁 Colab Version
+## Colab Version
 To run in Google Colab:
 - Upload your `.pdb` files directly to Colab
 - Use the included `colab_pipeline.py` script instead of `run_pipeline.py`
@@ -131,14 +131,14 @@ uploaded = files.upload()  # Select your PDB files
 %run colab_pipeline.py
 ```
 
-## 🧪 Example PDB IDs Used
+## Example PDB IDs Used
 The project includes example data for two proteins:
 - `1CRN` (Crambin): A small, well-characterized protein (46 residues)
 - `4HHB` (Hemoglobin subunit): A classic oxygen-binding protein (574 residues)
 
 You can add additional proteins by adding their PDB IDs to the list in `run_pipeline.py`.
 
-## 📚 Technical Details
+## Technical Details
 
 ### Graph Construction
 - **Nodes**: Protein residues (with Cα atom coordinates as positions)
@@ -152,7 +152,7 @@ You can add additional proteins by adding their PDB IDs to the list in `run_pipe
 - **Layers**: 2 GCN layers with ReLU activation
 - **Training**: Adam optimizer, Cross-entropy loss
 
-## 🔄 Contributing
+## Contributing
 Contributions are welcome! Some ideas for extension:
 - Add more node features (hydrophobicity, charge, etc.)
 - Implement alternative GNN architectures (GAT, GraphSAGE)
@@ -161,6 +161,7 @@ Contributions are welcome! Some ideas for extension:
 
 ---
 
-© Muhammad Abdullah – GitHub: [@muhabdullahd](https://github.com/muhabdullahd)
+Programming : @muhabdullahd
+Documentation and structural biology contextualization: Musab Nuh
 
 ![Protein Graph Example](/visualizations/1CRN_graph.png)
