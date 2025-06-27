@@ -162,6 +162,7 @@ Contributions are welcome! Some ideas for extension:
 ---
 
 Programming : @muhabdullahd
-Documentation and structural biology contextualization: Musab Nuh
+
+Documentation and structural biology contextualization: @musabnuh
 
 ![Protein Graph Example](/visualizations/1CRN_graph.png)
